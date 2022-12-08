@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayStation</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+      }
+      div {
+        background: rgb(59, 76, 228);
+        background: radial-gradient(
+          circle,
+          rgba(59, 76, 228, 1) 0%,
+          rgba(9, 9, 121, 1) 0%,
+          rgba(107, 119, 236, 1) 100%
+        );
+        border-radius: 20px;
+        max-width: 60vw;
+        margin: 0 auto;
+        padding: 15px;
+      }
+      img {
+        display: block;
+        border-radius: 15px;
+        max-width: 50vw;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        border: 20px solid #6b77ec;
+        border-radius: 15px;
+        padding: 15px;
+      }
+      h2 {
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+      }
+      span {
+        line-height: 1.5;
+      }
+      a {
+        font-style: italic;
+        color: white;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      span > a {
+        display: block;
+        color: white;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 10px 10px;
+      }
+      p {
+        margin: 10px 10px;
+        padding: 10px 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        font-style: italic;
+        line-height: 2;
+        margin: 0 10px;
+        padding: 0 10px;
+      }
+      button {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        background: #6b77ec;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px 20px;
+        margin: 0 auto;
+      }
+      button:hover {
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+      .footer {
+        text-align: center;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>I Love Gaming! ❤️</h1>
+      <h2>Especially PlayStation</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/949/original/ps5_digitial_edition_hardware.0.jpg?1669911700"
+        alt="PlayStation 5"
+      />
+      <p>
+        <strong>PlayStation</strong> is my favorite console gaming platform.
+        Some of my favorite games to play are:
+      </p>
+      <ul>
+        <li>Horizon Zero Dawn / Forbidden West</li>
+        <li>God of War</li>
+        <li>Dead by Daylight (DBD)</li>
+        <li>Uncharted 5</li>
+      </ul>
+      <p>They are addicting and so fun to play. Get a PlayStation today!</p>
+      <span>
+        <a
+          href="https://store.playstation.com/en-us/pages/latest"
+          target="_blank"
+          >Visit PlayStation's website for more info.</a
+        >
+      </span>
+      <hr />
+      <br />
+      <button class="buy">💵 Buy PlayStation</button>
+      <br />
+      <p class="footer">
+        <em
+          >This landing page was built by
+          <a href="https://www.codingbyrookie.com" target="_blank"
+            >Jacqueline Mason</a
+          >
+        </em>
+      </p>
+    </div>
+    <script>
+      function buyPs() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert("Thank you, " + name + "! We'll be in touch by email " + emoji);
+      }
+      let buy = document.querySelector(".buy");
+      buy.addEventListener("click", buyPs);
+    </script>
+  </body>
+</html>
