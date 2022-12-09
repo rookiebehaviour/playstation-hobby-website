@@ -9,12 +9,11 @@
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
-        background: black;
       }
 
       div {
         max-width: 650px;
-        margin: 0 auto;
+        margin: 10px auto;
         background: rgb(59, 76, 228);
         background: radial-gradient(
           circle,
@@ -24,7 +23,6 @@
         );
         border-radius: 20px;
         max-width: 600px;
-        margin: 0 auto;
         padding: 15px;
       }
 
@@ -112,8 +110,13 @@
         display: block;
         color: black;
         margin: 10px auto;
+        padding: 10px;
         text-align: center;
         line-height: 1.5;
+      }
+
+      .footer a {
+        color: rgb(59, 76, 228);
       }
     </style>
   </head>
@@ -147,18 +150,17 @@
       <br />
       <button class="buy">💳 Buy PlayStation</button>
       <br />
-
-      <small class="footer">
-        <em
-          >This landing page was built by
-          <a
-            href="https://github.com/rookiebehaviour/playstation-hobby-website"
-            target="_blank"
-            >Jacqueline ❤️ Mason</a
-          >
-        </em>
-      </small>
     </div>
+    <small class="footer">
+      <em
+        >This landing page was built by
+        <a
+          href="https://github.com/rookiebehaviour/playstation-hobby-website"
+          target="_blank"
+          >Jacqueline ❤️ Mason</a
+        >
+      </em>
+    </small>
     <script>
       function buyPs() {
         let name = prompt("What is your name?");
